@@ -1,0 +1,192 @@
+.home {
+  background: rgb(4,3,47);
+  width: 100%;
+  height: 100%;
+  overflow: scroll;
+  margin-top: 10rem;
+  z-index: 80;
+  background-image: url("../../assets/image/newHome.png");
+        z-index: -99;
+        background-repeat: no-repeat;
+        -moz-background-size:95% 100%; 
+        background-size:95% 100%;
+}
+.main_body {
+  width:100%;
+  margin: 0 auto;
+  .bodyBg{
+    width: 85rem;
+    margin: 0 auto;
+    background-image: url("../../assets/image/home1.png");
+    background-repeat:no-repeat;
+    background-size:100% 50%;
+    -moz-background-size:100% 50%;
+    z-index: 80;
+    .imgText {
+      z-index: 10;
+      position: relative;
+      font-size: 5rem;
+      bottom: 50rem;
+      font-family: 'Ink Free';
+      color: #fff;
+    }
+  }
+   .bodyBg:before{
+     content: "";
+      display: block; 
+      padding-top: 100%;
+    }
+  .main_menu {
+      list-style: none;
+      border: 0; 
+      padding: 0;
+      position: relative;
+      bottom: 40rem;
+      margin: 0;
+      ul {
+      }
+      li {
+          box-shadow: inset -2px -2px 5px #000;
+          background: #ffffff; 
+          height: 100px; 
+          width: 250px; 
+          display: inline-block; 
+          margin: 2px;
+          line-height: 100px;
+          text-align: center;
+          margin-right: 0;
+          margin-bottom: 20px;
+          border-radius: 10px;
+          flex: auto;
+            .menu_body {
+                  width: 100%;
+                  display: flex;
+              }
+            .earth {
+                width: 60px;
+                height: 60px;
+                margin-top: 20px;
+                margin-left: 20px;
+              }
+              .data_class {
+                height:100px;
+                flex: 1;
+                font-family: 'Calibri';
+                font-size: 25px;
+                line-height: 0px;
+                text-align: left;
+                margin-left: 40px;
+                margin-top: 5px;
+                span{
+                  line-height: 50px;
+                }
+              }
+      }
+     
+  }        
+}
+.footer {
+  width:100%;
+  display: flex;
+  margin: 0 auto;
+  position: relative;
+  bottom: 220px;
+  .mine_but {
+    // flex:1 1 auto;
+    .button {
+      display: flex;
+      justify-content: space-between;
+      button:focus {outline:none;}
+      button {
+        box-shadow: inset 0px 1px 5px #4a4a4a;
+        margin-top:80px;
+        width: 150px;
+        height: 40px;
+        margin-left: 20px;
+      }
+    }
+  }
+  .right_img {
+    // flex:0 0 auto;
+    position: absolute;
+    bottom: -58rem;
+    right: 0;
+    img {
+    width: 50rem;
+    height: 38rem;
+    z-index: 1;
+    }
+        
+    }
+  .left_img{
+    padding:5px;
+    img{
+      width: 55rem;
+      height: 30rem;
+      position: absolute;
+      bottom: -50rem;
+      left: -8rem;
+    }
+  }
+  .share {
+    width: 40rem;
+    left: calc(50% - 20rem);
+    position: absolute;
+    bottom: -80px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    img {
+      width: 25px;
+      height: 25px;
+      margin: 10px;
+    }
+  }
+}
+
+.ant-btn {
+line-height: 1.499;
+position: relative;
+display: inline-block;
+font-weight: 400;
+font-family: 'Calibri (正文)';
+white-space: nowrap;
+text-align: center;
+background-image: none;
+border: 1px solid transparent;
+-webkit-box-shadow: 0 2px 0 rgba(0,0,0,0.015);
+box-shadow: 0 2px 0 rgba(0,0,0,0.015);
+cursor: pointer;
+-webkit-transition: all .3s cubic-bezier(.645, .045, .355, 1);
+transition: all .3s cubic-bezier(.645, .045, .355, 1);
+-webkit-user-select: none;
+-moz-user-select: none;
+-ms-user-select: none;
+user-select: none;
+-ms-touch-action: manipulation;
+touch-action: manipulation;
+height: 32px;
+padding: 0 15px;
+font-size: 24px;
+border-radius: 40px;
+color: rgba(0,0,0,0.65);
+background-color: #fff;
+border-color: #d9d9d9;
+}
+
+// .ant-btn-primary {
+//     color: #fff;
+//     background-color: #1890ff;
+//     border-color: #1890ff;
+//     text-shadow: 0 -1px 0 rgba(0,0,0,0.12);
+//     -webkit-box-shadow: 0 2px 0 rgba(0,0,0,0.045);
+//     box-shadow: 0 2px 0 rgba(0,0,0,0.045);
+// }
+.ant-btn-red {
+color: #fff;
+background-color: #FF5A44;
+border-color: #FF5A44;
+text-shadow: 0 -1px 0 rgba(0,0,0,0.12);
+-webkit-box-shadow: 0 2px 0 rgba(0,0,0,0.045);
+box-shadow: 0 2px 0 rgba(0,0,0,0.045);
+}
